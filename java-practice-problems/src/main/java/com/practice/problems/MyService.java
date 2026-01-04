@@ -35,4 +35,35 @@ public class MyService {
         num1 = num1 - num2;
         System.out.println("num1 : "+ num1 + " num2 : "+num2);
     }
+
+    public boolean checkPalindrome(String str) {
+        int length = str.length();
+        for(int i=0; i<length/2; i++){
+            if(str.charAt(i) != str.charAt(length - i -1)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void fibonacci(int count) {
+        int a = 0;
+        int b = 1;
+        int c = 1;
+
+        for(int i = 1; i <= count; i++){
+            System.out.print(a + ", ");
+            a = b;
+            b = c;
+            c = a + b;
+        }
+    }
+
+    public int fibonacciByRecursion(int count) {
+        if(count <= 1){
+            return count;
+        }
+
+        return fibonacciByRecursion(count - 1) + fibonacciByRecursion(count - 2);
+    }
 }

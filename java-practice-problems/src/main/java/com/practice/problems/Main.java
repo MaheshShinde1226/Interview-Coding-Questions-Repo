@@ -9,6 +9,21 @@ public class Main {
 //        service.reverseString("Hashmap");
 
         //2.Swap two numbers with and without using third variable
-        service.swapNumbers(2,4);
+//        service.swapNumbers(2,4);
+
+        //3.Check given String is palindrome or not
+//        String str = "mahesh";
+//        System.out.print(service.checkPalindrome(str));
+
+        //4.Print fibonacci series for the first N numbers
+        //We can do this by two methods :
+        //i.Simple method ii.recursion
+        //i.Simple Method :
+        int count = 10;
+//        service.fibonacci(10);
+        //ii.by recursion
+        for(int i = 0; i < count; i++){
+            System.out.print(service.fibonacciByRecursion(i) + ", ");
+        }
     }
 }
