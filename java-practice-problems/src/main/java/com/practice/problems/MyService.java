@@ -66,4 +66,22 @@ public class MyService {
 
         return fibonacciByRecursion(count - 1) + fibonacciByRecursion(count - 2);
     }
+
+    public String removeWhitespace(String str) {
+        StringBuilder out = new StringBuilder();
+        char[] arr = str.toCharArray();
+        for(char i : arr){
+            if(!Character.isWhitespace(i)){
+                out.append(i);
+            }
+        }
+
+        return out.toString();
+    }
+
+    public String removeWhiteSpaces(String str) {
+        str = str.strip();
+//        str = str.trim(); we can use trim method also
+        return str;
+    }
 }

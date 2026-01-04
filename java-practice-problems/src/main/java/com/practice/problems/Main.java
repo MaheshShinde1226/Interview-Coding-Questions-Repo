@@ -19,11 +19,17 @@ public class Main {
         //We can do this by two methods :
         //i.Simple method ii.recursion
         //i.Simple Method :
-        int count = 10;
+//        int count = 10;
 //        service.fibonacci(10);
         //ii.by recursion
-        for(int i = 0; i < count; i++){
-            System.out.print(service.fibonacciByRecursion(i) + ", ");
-        }
+//        for(int i = 0; i < count; i++){
+//            System.out.print(service.fibonacciByRecursion(i) + ", ");
+//        }
+
+        //5.Remove whitespaces from String
+//        System.out.print(service.removeWhitespace("Mah esh"));
+
+        //6.Remove trailing whitespace by two methods trim() & strip()
+        System.out.print(service.removeWhiteSpaces(" Mahesh "));
     }
 }
